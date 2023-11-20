@@ -1,0 +1,33 @@
+Endpoint/Base URI - Address where the API hosted on the server.
+GET Method is used to extract the info from given the server using given URI.
+Using Query parameter we can send input data in GET.
+
+POST Method is used to send data to to the server
+using Form parameter/Body Payload we can send input data in Post.
+
+PUT Method is used to update the info on the server using given URI.
+
+Delete methos is used delete all the data from the server using Given URI.
+
+Example of Resource
+Google/<Resource name>
+Google.com/maps
+Google.com/search
+Google.com/images
+
+Path parameters are variable parts of a URL path.
+Example of path parameters
+https://www.google.com/images/1123343
+
+Query parameters are used sort or filter the resource
+Example of Query parameters
+https://amazon.com/order?sort_id=2/11/2023
+
+Headers represents meta data associated with API request and Response.
+
+i.e Base URL/resource/query or path parameter
+
+
+Serialization is the process of converting java object into Request body(payload)
+Deserialization is the process of converting Response   body(payload) into java object.
+

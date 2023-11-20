@@ -1,0 +1,39 @@
+BDD is collaborative practice
+Gherkin is a business readable language and it is used to write requirement or executable specification.
+Executable specification act as requirement, test and documentations.
+cucumber helps you to automate your executable specifications.
+
+
+Tags keyword is used user to execute selective test
+Background keyword is used to execute common precondition shared by multiple scenario with in the feature
+Hooks keyword is used to execute the code  before or after the specific test event
+These can be used setup and teardown such as intializing the data and closing the resource.
+@Before, @After, @BeforeStep ,@AfterStep
+
+configuration file is used define the various settings and behavior.you can specify plugin integration,
+output format and step definition location
+
+^ -Start of the string
+$ -End of the string
+(.*) - Matches anything of the String
+(.+) - Matches at least one of the String
+(\\d+) - Sequence of digits
+(\\w+) - Sequence of letters or digits
+only Hooks used for low-level logic such as starting browser, deleting data from database
+hooks will get executed even if test is fails.
+Backround is used to avoid repeating the common steps in every scenario.
+
+//To execute in cmd prompt
+mvn test                        or mvn clean test   mvn clean verify
+//to see results with arguments
+mvn test -Dcucumber.options="--help"
+//To Run Specific feature on cmd prompt
+mvn test -Dcucumber.options="src/test/java/login.feature"
+//To Run with tags
+mvn test -Dcucumber.options="--tags @smoke"
+mvn test -Dcucumber.options="-t @smoke"
+//To generate test report with the execution
+mvn test -Dcucumber.options="-p html:target/htmlReports"
+
+
+

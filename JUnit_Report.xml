@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="53.772" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Login Page Test" name="Check the login features" time="53.15">
+<system-out><![CDATA[
+Given navigate to the home page and click the Signin btn....................passed
+When user enters valid email_id with password...............................passed
+And verify the dash board page title........................................passed
+Then logout the e_com application...........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
